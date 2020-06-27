@@ -2,22 +2,22 @@
 class Retrotxt < Formula
   desc "RetroTxt is the tool that turns ANSI, ASCII, NFO text into in-browser HTML."
   homepage "https://retrotxt.com/go"
-  version "0.0.13"
+  version "0.0.14"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.13/retrotxt_macos.zip"
-    sha256 "a56def24324be5977cb69e5737022572910b0feeb6a28958b1dd39939912b20c"
+    url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.14/retrotxt_macos.zip"
+    sha256 "456ac250859f7a983d10f5c523ec2d22212c6ebdc917151a3fb08251a45ea5ed"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.13/retrotxt_linux.tar.gz"
-      sha256 "12e4903173d52f18988af3b7a4394b3f85622e0514fac642d6d61f6d7a8e2fcf"
+      url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.14/retrotxt_linux.tar.gz"
+      sha256 "78d5215dbcbeb447d78a499870db6bb4835ffe35e5326f874dfbb08d5ada22b2"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
       else
-        url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.13/retrotxt_raspberry_pi-zero.tar.gz"
-        sha256 "9b06a8acdff9ab43fde1966b1a205dff43fa535de4390c91c5996c49789a083c"
+        url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.14/retrotxt_raspberry_pi-zero.tar.gz"
+        sha256 "425373a727aeb7c7de3f2d26df5339c97817ad5388e1cc634fb5cd4f94c19911"
       end
     end
   end
