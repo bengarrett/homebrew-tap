@@ -2,16 +2,16 @@
 class Retrotxt < Formula
   desc "RetroTxt is the tool that turns ANSI, ASCII, NFO text into in-browser HTML."
   homepage "https://retrotxt.com/go"
-  version "0.0.26"
+  version "0.0.27"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.26/retrotxt_macos.zip"
-    sha256 "975cdc0951fb63be84b597a1a546eef019d78e8a94d7b654e3edb07bbc11c276"
+    url "https://github.com/bengarrett/retrotxtgo/releases/download/v0.0.27/retrotxt_macos.zip"
+    sha256 "f2af511f371a1d13a3cd21ac026cded5dfdb86ad9cb5938fedb77cf4aaa72c32"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/bengarrett/retrotxtgo/releases/download/0.0.26/retrotxt_linux.tar.gz"
-    sha256 "d0bf160f022696dbaf5cebee40ffb87c302e8ac29ebf6a9fdb8ab1cdbbb9b2b1"
+    url "https://github.com/bengarrett/retrotxtgo/releases/download/v0.0.27/retrotxt_linux.tar.gz"
+    sha256 "f43647cdd186cb012590ecc717d91f4b6cb36d907c78fcdf8acb85ceda26aeab"
   end
 
   def install
