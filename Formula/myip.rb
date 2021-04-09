@@ -5,17 +5,17 @@
 class Myip < Formula
   desc "Determine your Internet-facing IP address and location from multiple sources."
   homepage "https://github.com/bengarrett/myip/"
-  version "0.9.2-fix1"
+  version "0.9.2-fix2"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/bengarrett/homebrew-tap/releases/download/v0.9.2-fix1/homebrew-tap_macOS_Intel.tar.gz"
-    sha256 "73fca93a31b73d45928180a0175bebcd5fe65e5ce289183e2e3a0eaf08c208d2"
+    url "https://github.com/bengarrett/homebrew-tap/releases/download/v0.9.2-fix2/homebrew-tap_macOS_Intel.tar.gz"
+    sha256 "7a8b1e79fd290c486717161430f749161bdf1635a7950aeeb58a044d9f8dbaf1"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/bengarrett/homebrew-tap/releases/download/v0.9.2-fix1/homebrew-tap_macOS_M-series.tar.gz"
-    sha256 "c66352210289d4915a065e36dcb1310a2a24794b177e16ba257d288a28894268"
+    url "https://github.com/bengarrett/homebrew-tap/releases/download/v0.9.2-fix2/homebrew-tap_macOS_M-series.tar.gz"
+    sha256 "2f4a1c79c8bde5e9cd74e9167da9dd4983aaef5d691fabf61d9a2c70c13391d4"
   end
 
   def install
